@@ -1,0 +1,30 @@
+{
+  "name": "@tenpi/jxl",
+  "version": "1.0.2",
+  "main": "index.js",
+  "description": "Wasm jxl encoder and decoder supporting the browser. Repackaged from Squoosh App.",
+  "repository": "tenpi/jSquash",
+  "keywords": [
+    "image",
+    "optimisation",
+    "optimization",
+    "squoosh",
+    "wasm",
+    "webassembly",
+    "jxl"
+  ],
+  "license": "Apache-2.0",
+  "scripts": {
+    "clean": "del-cli dist",
+    "build": "npm run clean && tsc && cp -r codec package.json README.md *.d.ts .npmignore dist"
+  },
+  "dependencies": {
+    "wasm-feature-detect": "^1.2.11"
+  },
+  "devDependencies": {
+    "del-cli": "^5.0.0",
+    "typescript": "^4.4.4"
+  },
+  "type": "module",
+  "sideEffects": false
+}
